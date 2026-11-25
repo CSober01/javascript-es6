@@ -13,5 +13,10 @@ let studentScores = {
 };
 
 // Start coding here
+const studentNameAndScores = {
+  ...studentProfile,
+  ...studentScores,
+};
 
-console.log(newStudentProfile);
+
+console.log(studentNameAndScores);

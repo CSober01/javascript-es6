@@ -10,5 +10,12 @@ let studentProfile = {
 let additionalHobbies = ["Painting", "Yoga"];
 
 // Start coding here
+const studentInformation = {
+  ...studentProfile,
+  hobbies: [
+    ...studentProfile.hobbies,
+    ...additionalHobbies,
+  ],
+};
 
-console.log(newStudentProfile);
+console.log(studentInformation);

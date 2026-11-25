@@ -10,5 +10,9 @@ let additionalOrders = [
 ];
 
 // Start coding here
+const orderInformation = [
+  ...orders,
+  ...additionalOrders,
+];
 
-console.log(newOrders);
+console.log(orderInformation);
