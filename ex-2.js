@@ -14,4 +14,17 @@ let studentScores = {
 
 // Start coding here
 
+let newStudentProfile = {
+  ...studentProfile,
+  scores: {
+    ...studentProfile.scores,
+    ...studentScores,
+  },
+};
+
 console.log(newStudentProfile);
+// {
+//   name: 'John',
+//   age: 20,
+//   scores: { thai: 40, math: 30, english: 70, tech: 100 }
+// }
